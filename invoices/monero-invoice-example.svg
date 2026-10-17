@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 980" width="850" height="980" role="img" aria-label="Sample Monero Commercial Invoice with Subaddress, Price Hold Window, and Verification Disclaimer">
+  <defs>
+    <style>
+      .h1 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #0F172A; }
+      .h2 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; fill: #1E293B; }
+      .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.8px; fill: #64748B; }
+      .body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; fill: #334155; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-weight: 600; font-size: 13px; fill: #0F172A; }
+      .warn { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12.5px; fill: #92400E; }
+    </style>
+  </defs>
+
+  <rect width="850" height="980" fill="#F8FAFC"/>
+  <rect x="35" y="30" width="780" height="920" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="35" y="30" width="780" height="8" rx="4" fill="#FF6600"/>
+
+  <!-- Header -->
+  <text class="h1" x="75" y="92" font-size="28">INVOICE / PAYMENT REQUEST</text>
+  <text class="body" x="75" y="118">Example Merchant Studio • invoice@example-merchant.tld</text>
+
+  <rect x="595" y="64" width="180" height="32" rx="16" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text class="warn" x="685" y="85" text-anchor="middle">STATUS: UNPAID REQUEST</text>
+
+  <!-- Metadata Grid -->
+  <line x1="75" y1="142" x2="775" y2="142" stroke="#E2E8F0"/>
+  <text class="label" x="75" y="170">INVOICE NUMBER</text>
+  <text class="mono" x="75" y="192">INV-2026-1042</text>
+
+  <text class="label" x="255" y="170">ISSUED AT (UTC)</text>
+  <text class="mono" x="255" y="192">2026-10-17 14:00 UTC</text>
+
+  <text class="label" x="455" y="170">RATE LOCK EXPIRES</text>
+  <text class="mono" x="455" y="192">2026-10-17 14:30 UTC</text>
+
+  <text class="label" x="645" y="170">CONFIRMATION POLICY</text>
+  <text class="mono" x="645" y="192">Standard (1 conf)</text>
+  <line x1="75" y1="212" x2="775" y2="212" stroke="#E2E8F0"/>
+
+  <!-- Line Items Table -->
+  <rect x="75" y="234" width="700" height="34" rx="6" fill="#F1F5F9"/>
+  <text class="label" x="92" y="256">DESCRIPTION</text>
+  <text class="label" x="490" y="256">QTY</text>
+  <text class="label" x="575" y="256">UNIT (EUR)</text>
+  <text class="label" x="685" y="256">TOTAL (EUR)</text>
+
+  <text class="body" x="92" y="298">Custom Hardware Enclosure (Batch #4)</text>
+  <text class="body" x="495" y="298">2</text>
+  <text class="body" x="575" y="298">€75.00</text>
+  <text class="body" x="685" y="298">€150.00</text>
+
+  <line x1="75" y1="316" x2="775" y2="316" stroke="#E2E8F0"/>
+  <text class="body" x="92" y="346">Tracked Courier Shipping</text>
+  <text class="body" x="495" y="346">1</text>
+  <text class="body" x="575" y="346">€15.00</text>
+  <text class="body" x="685" y="346">€15.00</text>
+  <line x1="75" y1="366" x2="775" y2="366" stroke="#E2E8F0"/>
+
+  <!-- Totals & Conversion Box -->
+  <rect x="395" y="386" width="380" height="114" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text class="body" x="415" y="414">Fiat Total (EUR):</text>
+  <text class="h2" x="755" y="414" font-size="15" text-anchor="end">€165.00 EUR</text>
+
+  <text class="body" x="415" y="442">Conversion Rate (Kraken/Bitfinex median):</text>
+  <text class="mono" x="755" y="442" text-anchor="end">1 XMR = €150.00</text>
+
+  <text class="h2" x="415" y="478" font-size="18" fill="#FF6600">EXACT AMOUNT DUE (XMR):</text>
+  <text class="mono" x="755" y="478" font-size="18" fill="#FF6600" text-anchor="end">1.100000000000 XMR</text>
+
+  <!-- Subaddress & QR Payment Section -->
+  <rect x="75" y="524" width="700" height="236" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text class="label" x="98" y="554">DEDICATED ORDER SUBADDRESS (UNIQUE TO INV-2026-1042)</text>
+  <text class="mono" x="98" y="580">888tNkZrPN6JsEgekjMnABU4TBWoKf6vn57g6o24iGzTqGq6V7Z7</text>
+  <text class="mono" x="98" y="600">VqN54zM7JmPzQhC2jX9fDq2VjX9mPzQhC2jX9fDq2V</text>
+
+  <text class="label" x="98" y="634">MONERO PAYMENT URI (RFC / MONERO URI SPECIFICATION)</text>
+  <text class="mono" x="98" y="656">monero:888tNkZrPN6J...?tx_amount=1.1&amp;recipient_name=ExampleMerchant</text>
+
+  <text class="body" x="98" y="696">• Send the exact XMR amount above (excluding your wallet's network fee).</text>
+  <text class="body" x="98" y="720">• Save your Transaction ID (TXID) and Transaction Key (tx_key) after sending.</text>
+
+  <rect x="595" y="546" width="156" height="156" rx="12" fill="#FFFFFF" stroke="#94A3B8" stroke-dasharray="6 6"/>
+  <text class="label" x="673" y="622" text-anchor="middle">INVOICE QR</text>
+  <text class="body" x="673" y="642" text-anchor="middle" font-size="11">(monero: URI)</text>
+
+  <!-- Mandatory Operational & Legal Disclaimers -->
+  <rect x="75" y="784" width="700" height="132" rx="10" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text class="warn" x="95" y="812">IMPORTANT VERIFICATION &amp; RECORDKEEPING NOTICES:</text>
+  <text class="body" x="95" y="838">1. Not a Receipt: This invoice / QR request is NOT proof of payment. Settlement is complete only</text>
+  <text class="body" x="95" y="858">   when the merchant verifies 1+ block confirmations to the unique subaddress above.</text>
+  <text class="body" x="95" y="882">2. Refunds: Monero stealth addresses hide sender addresses; refunds require a customer refund address.</text>
+  <text class="body" x="95" y="902">3. Tax Compliance: Invoice requirements (VAT/GST/Tax IDs) vary by jurisdiction; adapt before use.</text>
+</svg>

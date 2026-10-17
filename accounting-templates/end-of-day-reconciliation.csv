@@ -1,0 +1,3 @@
+shift_date,till_id,wallet_account,opening_subaddress_index,closing_subaddress_index,sales_count_paid,sales_count_partial,sales_count_expired,gross_xmr_received,refunds_xmr_sent,net_xmr_settled,fiat_currency,gross_fiat_total,reconciled_by,notes
+2026-10-17,TILL-1,1,1,14,12,0,2,2.845120000000,0.000000000000,2.845120000000,EUR,426.77,Cashier-A,All 12 paid sales verified at 1+ confirmations; 2 unpaid quotes expired
+2026-10-17,TILL-2,2,1,6,5,1,0,1.350000000000,0.150000000000,1.200000000000,EUR,180.00,Cashier-B,Order ORD-2004 overpaid by 0.15 XMR and refunded via cold wallet

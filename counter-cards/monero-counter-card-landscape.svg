@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" role="img" aria-label="We Accept Monero (XMR) — Printable 6x4 landscape counter sign and window decal">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #111827; }
+      .sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #4B5563; }
+      .step { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 600; fill: #1F2937; }
+      .note { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #6B7280; }
+    </style>
+  </defs>
+
+  <rect width="960" height="640" fill="#F9FAFB"/>
+  <rect x="40" y="40" width="880" height="560" rx="24" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="40" y="40" width="14" height="560" rx="7" fill="#FF6600"/>
+
+  <!-- Left Column: Brand + Steps -->
+  <g transform="translate(96, 86) scale(1.35)">
+    <circle cx="37.3" cy="37.3" r="37.2" fill="#FFFFFF"/>
+    <path d="m 37.3,0.35329395 c -20.377,0 -36.903,16.524 -36.903,36.902 0,4.074 0.66,7.992 1.88,11.657 l 11.036,0 0,-31.049 23.987,23.987 23.987,-23.987 0,31.049 11.037,0 c 1.22,-3.665 1.88,-7.583 1.88,-11.657 0,-20.378 -16.526,-36.902 -36.904,-36.902" fill="#FF6600"/>
+    <path d="m 21.3164,36.895994 0,19.537 -15.55,0 c 6.478,10.628 18.178,17.726 31.533,17.726 13.355,0 25.056,-7.098 31.533,-17.726 l -15.549,0 0,-19.537 -15.984,15.984 z" fill="#4C4C4C"/>
+  </g>
+
+  <text class="title" x="218" y="132" font-size="34">WE ACCEPT MONERO</text>
+  <text class="sub" x="218" y="164" font-size="18">Private digital cash • Direct to merchant wallet</text>
+
+  <rect x="96" y="216" width="440" height="270" rx="16" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text class="step" x="124" y="260" font-size="19">Pay with any Monero (XMR) wallet:</text>
+  <text class="sub" x="124" y="302" font-size="16">1. Scan the invoice QR on our till or this card</text>
+  <text class="sub" x="124" y="340" font-size="16">2. Verify the exact XMR amount requested</text>
+  <text class="sub" x="124" y="378" font-size="16">3. Send &amp; wait for confirmation on the counter till</text>
+  <text class="note" x="124" y="438" font-size="14">Compatible with MonkStash, Cake Wallet, Feather,</text>
+  <text class="note" x="124" y="460" font-size="14">Monero.com, Official Monero GUI, and standard URI wallets.</text>
+
+  <text class="note" x="96" y="544" font-size="13">Note: A QR code is a payment request, not proof of payment.</text>
+
+  <!-- Right Column: QR Box -->
+  <rect x="576" y="110" width="300" height="300" rx="20" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="8 8"/>
+  <text class="step" x="726" y="252" font-size="17" text-anchor="middle" fill="#374151">Place Store QR Here</text>
+  <text class="note" x="726" y="280" font-size="14" text-anchor="middle">(300 × 300 px)</text>
+
+  <text class="step" x="726" y="456" font-size="16" text-anchor="middle">Store / Till Identifier:</text>
+  <text class="note" x="726" y="488" font-size="15" text-anchor="middle">__________________________</text>
+</svg>

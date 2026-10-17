@@ -11,10 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify SVG syntax
+      - name: Verify SVG syntax across all vector assets
         run: |
           which xmllint || sudo apt-get install -y libxml2-utils
+          xmllint --noout assets/hero-banner.svg
+          xmllint --noout assets/checkout-verification-flow.svg
           xmllint --noout counter-cards/monero-counter-card-portrait.svg
-      - name: Verify CSV schema
+          xmllint --noout counter-cards/monero-counter-card-landscape.svg
+          xmllint --noout invoices/monero-invoice-example.svg
+      - name: Verify CSV schemas
         run: |
           head -n 1 accounting-templates/monero-daily-sales-ledger.csv | grep -q "date,time,order_id,type,amount_xmr,exchange_rate_usd,fiat_total_usd,txid,subaddress,confirmations,notes"
+          head -n 1 accounting-templates/end-of-day-reconciliation.csv | grep -q "shift_date,till_id,wallet_account,opening_subaddress_index,closing_subaddress_index,sales_count_paid,sales_count_partial,sales_count_expired,gross_xmr_received,refunds_xmr_sent,net_xmr_settled,fiat_currency,gross_fiat_total,reconciled_by,notes"

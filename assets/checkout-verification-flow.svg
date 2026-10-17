@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" width="100%" height="340" role="img" aria-label="Monero Payment Verification Stages: Payment Request vs Unconfirmed Mempool vs Confirmed Block Finality">
+  <defs>
+    <style>
+      .bg { fill: #F8FAFC; stroke: #E2E8F0; stroke-width: 1.5; }
+      .heading { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 20px; fill: #0F172A; }
+      .box { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .stage { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 15px; fill: #0F172A; }
+      .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 12.5px; fill: #334155; }
+      .tag-red { fill: #FEE2E2; stroke: #FCA5A5; stroke-width: 1; }
+      .tag-red-txt { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 11px; fill: #991B1B; }
+      .tag-amber { fill: #FEF3C7; stroke: #FDE68A; stroke-width: 1; }
+      .tag-amber-txt { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 11px; fill: #92400E; }
+      .tag-green { fill: #DCFCE7; stroke: #86EFAC; stroke-width: 1; }
+      .tag-green-txt { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 11px; fill: #166534; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="2" y="2" width="1096" height="336" rx="16"/>
+  <text class="heading" x="32" y="42">Payment Verification Stages: When Is an Order Actually Paid?</text>
+
+  <!-- Stage 1 -->
+  <g transform="translate(28, 66)">
+    <rect class="box" x="0" y="0" width="328" height="244" rx="12"/>
+    <rect x="0" y="0" width="328" height="6" rx="3" fill="#EF4444"/>
+    <text class="stage" x="20" y="34">Stage 1: Payment Request / QR</text>
+    <rect class="tag-red" x="20" y="48" width="190" height="24" rx="12"/>
+    <text class="tag-red-txt" x="32" y="64">NOT PROOF OF PAYMENT</text>
+    <text class="desc" x="20" y="100">• A payment link, invoice page, or QR code</text>
+    <text class="desc" x="20" y="120">  only asks for money to a fresh subaddress.</text>
+    <text class="desc" x="20" y="148">• Never accept a screenshot of a customer's</text>
+    <text class="desc" x="20" y="168">  phone screen as proof.</text>
+    <text class="desc" x="20" y="196">• Action: Wait for your own till/wallet to</text>
+    <text class="desc" x="20" y="216">  detect the incoming transfer on-chain.</text>
+  </g>
+
+  <!-- Stage 2 -->
+  <g transform="translate(386, 66)">
+    <rect class="box" x="0" y="0" width="328" height="244" rx="12"/>
+    <rect x="0" y="0" width="328" height="6" rx="3" fill="#F59E0B"/>
+    <text class="stage" x="20" y="34">Stage 2: Seen in Mempool (0-conf)</text>
+    <rect class="tag-amber" x="20" y="48" width="235" height="24" rx="12"/>
+    <text class="tag-amber-txt" x="32" y="64">SUITABLE FOR SMALL COUNTER SALES</text>
+    <text class="desc" x="20" y="100">• Appears within ~2–5 seconds of broadcast.</text>
+    <text class="desc" x="20" y="120">• Verify amount received &gt;= amount due.</text>
+    <text class="desc" x="20" y="148">• Suitable for small in-person sales (coffee,</text>
+    <text class="desc" x="20" y="168">  food, up to ~0.1 XMR) where goods are in hand.</text>
+    <text class="desc" x="20" y="196">• Never use 0-conf for instant digital goods,</text>
+    <text class="desc" x="20" y="216">  gift cards, or high-value electronics.</text>
+  </g>
+
+  <!-- Stage 3 -->
+  <g transform="translate(744, 66)">
+    <rect class="box" x="0" y="0" width="328" height="244" rx="12"/>
+    <rect x="0" y="0" width="328" height="6" rx="3" fill="#10B981"/>
+    <text class="stage" x="20" y="34">Stage 3: Mined in Blocks (1–10+ conf)</text>
+    <rect class="tag-green" x="20" y="48" width="225" height="24" rx="12"/>
+    <text class="tag-green-txt" x="32" y="64">CONFIRMED SETTLEMENT FINALITY</text>
+    <text class="desc" x="20" y="100">• 1 confirmation (~2 mins): Standard for</text>
+    <text class="desc" x="20" y="120">  everyday retail &amp; orders up to 1–5 XMR.</text>
+    <text class="desc" x="20" y="148">• 10 confirmations (~20 mins): Safe preset</text>
+    <text class="desc" x="20" y="168">  for large orders; coins unlock for spending.</text>
+    <text class="desc" x="20" y="196">• Action: Fulfill/ship order and log TXID</text>
+    <text class="desc" x="20" y="216">  in daily accounting records.</text>
+  </g>
+</svg>
