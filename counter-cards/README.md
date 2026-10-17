@@ -47,7 +47,7 @@ If you want customers to scan the printed card directly and type the amount in t
 
 | Attribute | Recommended Setting |
 |---|---|
-| **Paper Stock** | 300–350 gsm heavy cardstock or matte photo paper |
+| **Paper Stock** | 300-350 gsm heavy cardstock or matte photo paper |
 | **Finish** | Matte or anti-glare laminate (prevents overhead store lighting from reflecting off the QR code) |
 | **Display Mount** | 5" × 7" portrait or 6" × 4" landscape clear acrylic table stand |
 | **Brand Colors** | Monero Orange `#FF6600`, Slate `#4C4C4C` |

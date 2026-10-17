@@ -40,7 +40,7 @@
     <text class="stage" x="20" y="34">Stage 2: Seen in Mempool (0-conf)</text>
     <rect class="tag-amber" x="20" y="48" width="235" height="24" rx="12"/>
     <text class="tag-amber-txt" x="32" y="64">SUITABLE FOR SMALL COUNTER SALES</text>
-    <text class="desc" x="20" y="100">• Appears within ~2–5 seconds of broadcast.</text>
+    <text class="desc" x="20" y="100">• Appears within ~2-5 seconds of broadcast.</text>
     <text class="desc" x="20" y="120">• Verify amount received &gt;= amount due.</text>
     <text class="desc" x="20" y="148">• Suitable for small in-person sales (coffee,</text>
     <text class="desc" x="20" y="168">  food, up to ~0.1 XMR) where goods are in hand.</text>
@@ -52,11 +52,11 @@
   <g transform="translate(744, 66)">
     <rect class="box" x="0" y="0" width="328" height="244" rx="12"/>
     <rect x="0" y="0" width="328" height="6" rx="3" fill="#10B981"/>
-    <text class="stage" x="20" y="34">Stage 3: Mined in Blocks (1–10+ conf)</text>
+    <text class="stage" x="20" y="34">Stage 3: Mined in Blocks (1-10+ conf)</text>
     <rect class="tag-green" x="20" y="48" width="225" height="24" rx="12"/>
     <text class="tag-green-txt" x="32" y="64">CONFIRMED SETTLEMENT FINALITY</text>
     <text class="desc" x="20" y="100">• 1 confirmation (~2 mins): Standard for</text>
-    <text class="desc" x="20" y="120">  everyday retail &amp; orders up to 1–5 XMR.</text>
+    <text class="desc" x="20" y="120">  everyday retail &amp; orders up to 1-5 XMR.</text>
     <text class="desc" x="20" y="148">• 10 confirmations (~20 mins): Safe preset</text>
     <text class="desc" x="20" y="168">  for large orders; coins unlock for spending.</text>
     <text class="desc" x="20" y="196">• Action: Fulfill/ship order and log TXID</text>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero-banner.svg" alt="Monero Merchant Starter Kit — Editable counter cards, invoice templates, cashier quick-start sheet, verification checklist, and accounting records" width="100%" />
+  <img src="assets/hero-banner.svg" alt="Monero Merchant Starter Kit - Editable counter cards, invoice templates, cashier quick-start sheet, verification checklist, and accounting records" width="100%" />
 </p>
 
 # Monero Merchant Starter Kit [![Validate Assets](https://github.com/90ssolo/monero-merchant-starter-kit/actions/workflows/validate.yml/badge.svg)](https://github.com/90ssolo/monero-merchant-starter-kit/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -61,7 +61,7 @@ Best for freelancers, occasional sellers, and single-counter setups using a desk
 Best for cafes, market stalls, multi-register counters, and remote invoices without running a server:
 1. **In-Person Counter Till ([MonkStash POS Guide](https://monkstash.com/monero-pos)):**
    - Open [wallet.monkstash.com](https://wallet.monkstash.com) in watch-only or full mode and enable **Cashier / Till mode**.
-   - Select your currency (25+ fiat currencies or XMR), confirmation speed (`quick`, `standard`, or `safe`), and till number (`1` to `8` — each till uses a separate Monero wallet account so multiple registers never hand out the same subaddress).
+   - Select your currency (25+ fiat currencies or XMR), confirmation speed (`quick`, `standard`, or `safe`), and till number (`1` to `8` - each till uses a separate Monero wallet account so multiple registers never hand out the same subaddress).
    - Type the sale price; the screen displays a fresh subaddress QR code with a locked XMR quote and automatically marks the sale **Paid** when the required confirmations arrive.
 2. **Remote Invoices ([MonkStash Payment Links Guide](https://monkstash.com/monero-payment-link)):**
    - Create a payment request in your browser wallet and share the generated `/pay#...` link. Invoice details stay in the URL fragment (`#`), which browsers never transmit to a server.

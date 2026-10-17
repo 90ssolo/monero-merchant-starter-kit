@@ -27,8 +27,8 @@ When the customer clicks "Send" on their phone:
 | Transaction Type | Recommended Policy | Rationale |
 |---|---|---|
 | **Low Value** (Coffee, snacks, bakeries, casual dining < $50) | **0-conf (Mempool detection)** | Double-spend risk is near zero for low-value retail in-person purchases. Handing over goods immediately ensures fast counter throughput. |
-| **Medium Value** ($50 – $300) | **0-conf + Valid TX Hash check** | Confirm that fee is standard and transaction appears in connected node's pool. |
-| **High Value** ($300+, luxury items, electronics, gift cards) | **1 to 2 Confirmations (approx. 2–4 mins)** | Wait for the transaction to be minted into at least one block to guarantee finality. |
+| **Medium Value** ($50 - $300) | **0-conf + Valid TX Hash check** | Confirm that fee is standard and transaction appears in connected node's pool. |
+| **High Value** ($300+, luxury items, electronics, gift cards) | **1 to 2 Confirmations (approx. 2-4 mins)** | Wait for the transaction to be minted into at least one block to guarantee finality. |
 
 ---
 
