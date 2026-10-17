@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #111827; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #4B5563; }
+      .instruction { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 600; fill: #1F2937; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; fill: #FFFFFF; }
+      .footer-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; fill: #9CA3AF; }
+    </style>
+    <filter id="card-shadow" x="-5%" y="-3%" width="110%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" fill="#F9FAFB"/>
+
+  <!-- Printable Card Container (5" x 7" Aspect Ratio) -->
+  <rect x="60" y="60" width="680" height="1080" rx="32" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2" filter="url(#card-shadow)"/>
+
+  <!-- Top Accent Bar: Monero Orange -->
+  <path d="M 60 92 Q 60 60 92 60 L 708 60 Q 740 60 740 92 L 740 76 L 60 76 Z" fill="#FF6600"/>
+
+  <!-- Monero Official Logo Mark -->
+  <g transform="translate(400, 190) scale(1.6)">
+    <!-- Outer Circle -->
+    <circle cx="0" cy="0" r="48" fill="#FF6600"/>
+    <!-- Cutout White Inner Fill -->
+    <path d="M -48 0 C -48 26.51 -26.51 48 0 48 C 26.51 48 48 26.51 48 0 L 32 0 C 32 17.67 17.67 32 0 32 C -17.67 32 -32 17.67 -32 0 Z" fill="#FFFFFF"/>
+    <!-- The M Symbol -->
+    <path d="M -26 12 L -26 -24 L -13 -10 L 0 -24 L 13 -10 L 26 -24 L 26 12 L 16 12 L 16 -7 L 0 10 L -16 -7 L -16 12 Z" fill="#FFFFFF"/>
+    <!-- Bottom horizontal dividers -->
+    <rect x="-48" y="0" width="16" height="6" fill="#4C4C4C"/>
+    <rect x="32" y="0" width="16" height="6" fill="#4C4C4C"/>
+    <path d="M -32 0 L -32 6 C -32 23.67 -17.67 38 0 38 C 17.67 38 32 23.67 32 6 L 32 0 L 48 0 C 48 26.51 26.51 48 0 48 C -26.51 48 -48 26.51 -48 0 Z" fill="#4C4C4C"/>
+  </g>
+
+  <!-- Headers -->
+  <text class="title" x="400" y="320" font-size="38" text-anchor="middle">MONERO ACCEPTED HERE</text>
+  <text class="subtitle" x="400" y="360" font-size="20" text-anchor="middle">Fast, private, and non-custodial digital cash</text>
+
+  <!-- QR Code Frame / Placement Guide -->
+  <rect x="200" y="410" width="400" height="400" rx="24" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="8 8"/>
+  
+  <!-- Placeholder Icon & Text for Merchant QR insertion -->
+  <g transform="translate(400, 580)">
+    <circle cx="0" cy="0" r="36" fill="#E5E7EB"/>
+    <path d="M -12 -12 L 12 -12 L 12 12 L -12 12 Z M -8 -8 L -8 -2 L -2 -2 L -2 -8 Z M 2 -8 L 8 -8 L 8 -2 L 2 -2 Z M -8 2 L -2 2 L -2 8 L -8 8 Z" fill="#9CA3AF"/>
+  </g>
+  <text class="instruction" x="400" y="660" font-size="18" text-anchor="middle" fill="#6B7280">Place Merchant QR Code Here</text>
+  <text class="subtitle" x="400" y="690" font-size="15" text-anchor="middle" fill="#9CA3AF">(Monero Subaddress or Point-of-Sale Payment URL)</text>
+
+  <!-- Instructions Container -->
+  <rect x="140" y="860" width="520" height="150" rx="16" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <text class="instruction" x="400" y="905" font-size="20" text-anchor="middle">How to Pay with Monero (XMR):</text>
+  <text class="subtitle" x="400" y="942" font-size="17" text-anchor="middle">1. Scan the QR code using any Monero-compatible wallet</text>
+  <text class="subtitle" x="400" y="975" font-size="17" text-anchor="middle">2. Enter or verify the invoice amount and slide to send</text>
+
+  <!-- Footer Notice -->
+  <text class="footer-text" x="400" y="1065" font-size="14" text-anchor="middle">Powered by the Monero Network • Zero Intermediaries • Instant Verification</text>
+</svg>

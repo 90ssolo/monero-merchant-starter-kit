@@ -1,0 +1,4 @@
+date,time,order_id,type,amount_xmr,exchange_rate_usd,fiat_total_usd,txid,subaddress,confirmations,notes
+2026-10-17,14:23:10,ORD-1001,sale,0.342150000000,165.20,56.52,d1a498b3f2e1c75b8a0e8d7f6c5b4a3e2d1c0b9a8f7e6d5c4b3a2e1f0d9c8b7a,888tNkZrPN6JsEgekjMnABU4TBWoKf6vn57g6o24iGzTqGq6V7Z7VqN54zM7JmPzQhC2jX9fDq2VjX9mPzQhC2jX9fDq2V,10,In-store counter purchase
+2026-10-17,15:05:44,ORD-1002,sale,1.150000000000,165.10,189.87,a9f8e7d6c5b4a3e2d1c0b9a8f7e6d5c4b3a2e1f0d9c8b7a6e5d4c3b2a1f0e9d8,897tNkZrPN6JsEgekjMnABU4TBWoKf6vn57g6o24iGzTqGq6V7Z7VqN54zM7JmPzQhC2jX9fDq2VjX9mPzQhC2jX9fDq2V,10,Online WooCommerce order
+2026-10-17,16:12:01,ORD-1003,refund,-0.150000000000,165.00,-24.75,c4b3a2e1f0d9c8b7a6e5d4c3b2a1f0e9d8a9f8e7d6c5b4a3e2d1c0b9a8f7e6d5,887tNkZrPN6JsEgekjMnABU4TBWoKf6vn57g6o24iGzTqGq6V7Z7VqN54zM7JmPzQhC2jX9fDq2VjX9mPzQhC2jX9fDq2V,10,Customer overpayment return

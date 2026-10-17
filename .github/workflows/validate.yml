@@ -1,0 +1,20 @@
+name: Validate Assets and Links
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify SVG syntax
+        run: |
+          which xmllint || sudo apt-get install -y libxml2-utils
+          xmllint --noout counter-cards/monero-counter-card-portrait.svg
+      - name: Verify CSV schema
+        run: |
+          head -n 1 accounting-templates/monero-daily-sales-ledger.csv | grep -q "date,time,order_id,type,amount_xmr,exchange_rate_usd,fiat_total_usd,txid,subaddress,confirmations,notes"
